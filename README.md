@@ -86,11 +86,11 @@ Example Entry:
 
 | Parameter             | Value       |
 | --------------------- | ----------- |
-| Epochs                | 3           |
+| Epochs                | 5           |
 | Batch Size            | 2           |
 | Gradient Accumulation | 4           |
 | Effective Batch Size  | 8           |
-| Learning Rate         | 2e-4        |
+| Learning Rate         | 1e-4        |
 | Optimizer             | AdamW 8-bit |
 | LoRA Rank             | 16          |
 | LoRA Alpha            | 16          |
