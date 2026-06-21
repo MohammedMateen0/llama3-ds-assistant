@@ -204,7 +204,7 @@ https://huggingface.co/mateen-2003/llama3-ds-assistant
 ## Repository Structure
 
 ```text
-.
+llama3-ds-assistant/
 ├── data/
 │   └── ds_qa.json
 │
