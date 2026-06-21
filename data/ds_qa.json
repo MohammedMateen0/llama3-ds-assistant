@@ -1,0 +1,1087 @@
+[
+  {"instruction": "What is the difference between supervised and unsupervised learning?", "response": "Supervised learning uses labeled training data to predict outcomes, while unsupervised learning identifies hidden patterns or structures in unlabeled data."},
+  {"instruction": "Define the Bias-Variance tradeoff.", "response": "The Bias-Variance tradeoff is the balance between a model's error due to simplifying assumptions (bias) and its sensitivity to small fluctuations in the training set (variance)."},
+  {"instruction": "What is the purpose of a validation set?", "response": "A validation set is used to tune hyperparameters and provide an unbiased evaluation of a model fit while training, preventing overfitting to the training set."},
+  {"instruction": "Explain the curse of dimensionality.", "response": "The curse of dimensionality refers to the phenomena where data becomes sparse in high-dimensional spaces, making distance-based metrics and machine learning algorithms less effective."},
+  {"instruction": "What is feature engineering?", "response": "Feature engineering is the process of using domain knowledge to select, modify, or create new variables from raw data to improve model performance."},
+  {"instruction": "Describe the difference between L1 and L2 regularization.", "response": "L1 regularization (Lasso) adds the absolute value of coefficients to the loss, often driving some to zero for feature selection. L2 (Ridge) adds the squared value, shrinking coefficients towards zero without eliminating them."},
+  {"instruction": "What is the role of a learning rate?", "response": "The learning rate is a hyperparameter that controls how much to change the model weights in response to the estimated error each time the model weights are updated."},
+  {"instruction": "What is K-Fold Cross-Validation?", "response": "K-Fold cross-validation splits data into K subsets; the model is trained on K-1 folds and tested on the remaining fold, rotating until every subset has been used as the test set."},
+  {"instruction": "Define a confusion matrix.", "response": "A confusion matrix is a table used to describe the performance of a classification model by showing True Positives, True Negatives, False Positives, and False Negatives."},
+  {"instruction": "What is an ensemble method?", "response": "Ensemble methods combine multiple learning algorithms (like Bagging or Boosting) to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone."},
+  {"instruction": "What is a decision tree?", "response": "A decision tree is a flowchart-like structure where each internal node represents a feature test, each branch represents an outcome, and each leaf node represents a class label or value."},
+  {"instruction": "What is a support vector machine?", "response": "A Support Vector Machine (SVM) finds the optimal hyperplane that maximizes the margin between two classes in a high-dimensional space."},
+  {"instruction": "Explain the difference between bagging and boosting.", "response": "Bagging (Bootstrap Aggregating) trains models in parallel to reduce variance, while Boosting trains models sequentially to reduce bias by focusing on previous errors."},
+  {"instruction": "What is principal component analysis (PCA)?", "response": "PCA is a dimensionality reduction technique that transforms a large set of variables into a smaller one that still contains most of the information in the original set."},
+  {"instruction": "What is a gradient?", "response": "A gradient is a vector of partial derivatives of a function, representing the direction of the steepest increase of that function."},
+  {"instruction": "What is stochastic gradient descent?", "response": "Stochastic Gradient Descent (SGD) is a variant of gradient descent that updates parameters using only a single randomly selected data point (or a mini-batch) at each iteration."},
+  {"instruction": "What is the purpose of a kernel in SVM?", "response": "A kernel function transforms input data into a higher-dimensional space where classes might be linearly separable, without explicitly computing coordinates in that space."},
+  {"instruction": "What is a random forest?", "response": "A Random Forest is an ensemble learning method that constructs a multitude of decision trees at training time and outputs the mode of classes or mean prediction of the individual trees."},
+  {"instruction": "Define logistic regression.", "response": "Logistic regression is a statistical method for binary classification that uses a sigmoid function to map predicted values to probabilities between 0 and 1."},
+  {"instruction": "What is meant by the term 'data leakage'?", "response": "Data leakage occurs when information from outside the training dataset is used to create the model, leading to overly optimistic performance metrics that fail in production."},
+  {"instruction": "What is the activation function in a neural network?", "response": "An activation function introduces non-linearity into a neural network, allowing it to learn complex patterns beyond simple linear combinations."},
+  {"instruction": "Explain backpropagation.", "response": "Backpropagation is the process of calculating the gradient of the loss function with respect to each weight by applying the chain rule from the output layer back to the input layer."},
+  {"instruction": "What is the purpose of Dropout?", "response": "Dropout is a regularization technique where randomly selected neurons are ignored (or 'dropped out') during training to prevent the network from relying on specific pathways, thereby reducing overfitting."},
+  {"instruction": "What are convolutional neural networks (CNNs)?", "response": "CNNs are deep learning models designed for grid-like data (like images) that use convolutional layers to automatically learn spatial hierarchies of features."},
+  {"instruction": "Describe the vanishing gradient problem.", "response": "The vanishing gradient problem occurs in deep networks when gradients become extremely small as they propagate backward, preventing early layers from learning effectively."},
+  {"instruction": "What is Batch Normalization?", "response": "Batch Normalization normalizes the inputs to each layer to have a mean of zero and unit variance, stabilizing the learning process and allowing for higher learning rates."},
+  {"instruction": "What is a Recurrent Neural Network (RNN)?", "response": "An RNN is a class of neural networks where connections between nodes form a directed graph along a temporal sequence, allowing it to exhibit temporal dynamic behavior."},
+  {"instruction": "Explain the role of the loss function.", "response": "The loss function quantifies the difference between the model's prediction and the actual target, providing a signal for the optimizer to update model weights."},
+  {"instruction": "What is a weight initialization?", "response": "Weight initialization is the process of setting the initial values for the neural network's parameters; poor initialization can lead to slow convergence or vanishing/exploding gradients."},
+  {"instruction": "What is an epoch?", "response": "An epoch is one complete pass through the entire training dataset during the training of a neural network."},
+  {"instruction": "What is a multi-layer perceptron (MLP)?", "response": "An MLP is a feedforward artificial neural network consisting of at least three layers: an input layer, one or more hidden layers, and an output layer."},
+  {"instruction": "Explain the concept of 'depth' in deep learning.", "response": "Depth refers to the number of layers in a neural network; greater depth allows the model to learn more abstract and hierarchical representations of data."},
+  {"instruction": "What is a ReLU activation function?", "response": "Rectified Linear Unit (ReLU) is an activation function that outputs the input if it is positive, and zero otherwise, helping mitigate vanishing gradients."},
+  {"instruction": "What is a latent space?", "response": "A latent space is a compressed representation of high-dimensional data, where similar data points are mapped closer together."},
+  {"instruction": "What is transfer learning?", "response": "Transfer learning involves taking a model trained on a large dataset and fine-tuning it on a smaller, specific dataset to leverage pre-learned features."},
+  {"instruction": "What is an autoencoder?", "response": "An autoencoder is a neural network designed to learn efficient codings of input data by training it to reconstruct the input from a compressed bottleneck layer."},
+  {"instruction": "What are generative models?", "response": "Generative models are deep learning architectures designed to generate new data samples that resemble the distribution of the training data."},
+  {"instruction": "What is weight decay?", "response": "Weight decay is a form of L2 regularization that adds a penalty term proportional to the square of the magnitude of weights to the loss function."},
+  {"instruction": "What is a hyperparameter?", "response": "A hyperparameter is a configuration variable that is set before the training process begins, unlike model parameters which are learned during training."},
+  {"instruction": "What is early stopping?", "response": "Early stopping is a regularization technique that halts training when the model's performance on the validation set stops improving, preventing overfitting."},
+  {"instruction": "What is natural language processing (NLP)?", "response": "NLP is a subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language."},
+  {"instruction": "Define tokenization.", "response": "Tokenization is the process of breaking down a stream of text into smaller units called tokens, such as words, subwords, or characters."},
+  {"instruction": "What are stop words?", "response": "Stop words are common words (e.g., 'the', 'is') that are often filtered out in NLP preprocessing because they carry little semantic meaning for many tasks."},
+  {"instruction": "Explain word embeddings.", "response": "Word embeddings represent words as dense vectors of real numbers in a continuous vector space where semantically similar words are positioned closer together."},
+  {"instruction": "What is sentiment analysis?", "response": "Sentiment analysis is an NLP task that identifies and extracts the subjective emotional tone or opinion from a piece of text (e.g., positive, negative, neutral)."},
+  {"instruction": "What is named entity recognition (NER)?", "response": "NER is an information extraction task that classifies named entities in text into predefined categories like names of people, organizations, locations, etc."},
+  {"instruction": "What is the purpose of lemmatization?", "response": "Lemmatization reduces words to their base or dictionary form (lemma), considering context and morphological analysis to ensure the result is a real word."},
+  {"instruction": "What is stemming?", "response": "Stemming is a crude heuristic process that chops off the ends of words in the hope of achieving the goal of reducing words to their root form, regardless of correctness."},
+  {"instruction": "What is a bag-of-words model?", "response": "A bag-of-words model is a simple representation of text as a frequency vector, ignoring grammar and word order but keeping track of counts."},
+  {"instruction": "Explain TF-IDF.", "response": "TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic reflecting how important a word is to a document in a collection or corpus."},
+  {"instruction": "What is a language model?", "response": "A language model is a probabilistic model that predicts the probability of a sequence of words, often used to predict the next token in a sequence."},
+  {"instruction": "What is N-gram?", "response": "An N-gram is a contiguous sequence of N items (words or characters) from a given sample of text."},
+  {"instruction": "What is sequence-to-sequence (Seq2Seq) architecture?", "response": "Seq2Seq is a model architecture that transforms an input sequence (e.g., a sentence in English) into an output sequence (e.g., a translation in French)."},
+  {"instruction": "What is an attention mechanism?", "response": "An attention mechanism allows a model to selectively focus on different parts of an input sequence when generating an output, rather than relying on a single fixed-length vector."},
+  {"instruction": "What is dependency parsing?", "response": "Dependency parsing analyzes the grammatical structure of a sentence by establishing relationships between 'head' words and words which modify those heads."},
+  {"instruction": "What is a corpus?", "response": "A corpus is a large, structured set of machine-readable texts used for training and testing NLP models."},
+  {"instruction": "What is part-of-speech tagging?", "response": "POS tagging is the process of marking up a word in a text as corresponding to a particular part of speech, such as noun, verb, adjective, etc."},
+  {"instruction": "What is word sense disambiguation?", "response": "Word sense disambiguation is the task of identifying which sense of a word is used in a sentence when the word has multiple meanings."},
+  {"instruction": "What is text summarization?", "response": "Text summarization is the process of creating a shorter version of a document while preserving its main information and meaning."},
+  {"instruction": "Explain the difference between extractive and abstractive summarization.", "response": "Extractive summarization pulls important sentences directly from the text, while abstractive summarization generates new sentences that capture the original meaning."},
+  {"instruction": "What is a transformer?", "response": "A transformer is a neural network architecture based on self-attention mechanisms that allows for parallel processing of sequence data."},
+  {"instruction": "What is the encoder-decoder structure in transformers?", "response": "The encoder processes the input sequence into a rich representation, and the decoder generates the output sequence based on that representation and its own previous outputs."},
+  {"instruction": "Explain positional encoding.", "response": "Since transformers lack recurrence, positional encoding adds information about the order of tokens in the sequence to the input embeddings."},
+  {"instruction": "What is multi-head attention?", "response": "Multi-head attention runs multiple attention mechanisms in parallel, allowing the model to attend to information from different representation subspaces at different positions."},
+  {"instruction": "What is the Feed-Forward Network layer in a Transformer?", "response": "It is a position-wise fully connected network applied to each token's representation independently after the self-attention layer."},
+  {"instruction": "What is BERT?", "response": "BERT (Bidirectional Encoder Representations from Transformers) is an encoder-only model designed to pre-train deep bidirectional representations from unlabeled text."},
+  {"instruction": "What is GPT?", "response": "GPT (Generative Pre-trained Transformer) is a decoder-only model optimized for autoregressive language modeling and text generation."},
+  {"instruction": "What is masking in Transformers?", "response": "Masking prevents the model from 'seeing' certain tokens, such as future tokens during training (causal masking) or specific words during masked language modeling (MLM)."},
+  {"instruction": "What is cross-attention?", "response": "Cross-attention allows the decoder to attend to the hidden states produced by the encoder, effectively connecting the input sequence to the output generation."},
+  {"instruction": "What is a residual connection?", "response": "Residual connections add the input of a layer to its output, helping to solve the vanishing gradient problem by creating a 'highway' for gradients to flow through deeper networks."},
+  {"instruction": "What is Layer Normalization?", "response": "Layer Normalization normalizes the inputs across the feature dimension for each token, which is often more effective than Batch Norm in sequence-based models."},
+  {"instruction": "What is T5?", "response": "T5 (Text-to-Text Transfer Transformer) is a model that treats every NLP task as a text-to-text problem, using a unified encoder-decoder architecture."},
+  {"instruction": "What is a Vision Transformer (ViT)?", "response": "ViT is an architecture that applies the transformer mechanism to image patches, treating them similarly to words in a sentence."},
+  {"instruction": "What are model parameters vs. hyperparameters in Transformers?", "response": "Parameters (weights/biases) are learned during training; hyperparameters (layers, heads, embedding size) are fixed settings determined before training."},
+  {"instruction": "What is the Softmax layer?", "response": "The final layer in a transformer-based classification or generation model that converts output logits into a probability distribution over the vocabulary."},
+  {"instruction": "Why are Transformers better than RNNs for long sequences?", "response": "Transformers use attention to capture global dependencies in a single step, avoiding the long-range dependency issues and sequential computation bottlenecks of RNNs."},
+  {"instruction": "What is a 'context window'?", "response": "The context window is the maximum number of tokens a transformer model can process as input at one time."},
+  {"instruction": "What is model pruning?", "response": "Pruning is the process of removing redundant or low-impact parameters from a transformer to make it smaller and faster without significant performance loss."},
+  {"instruction": "What is knowledge distillation?", "response": "Knowledge distillation is the technique of training a smaller 'student' model to reproduce the output distribution of a larger, pre-trained 'teacher' model."},
+  {"instruction": "What is RoPE (Rotary Positional Embedding)?", "response": "RoPE is a technique that encodes absolute position with a rotation matrix and captures relative position through the properties of rotation, improving transformer sequence length handling."},
+  {"instruction": "What is precision?", "response": "Precision is the ratio of correctly predicted positive observations to the total predicted positives, indicating how many identified positives were actually correct."},
+  {"instruction": "What is recall?", "response": "Recall is the ratio of correctly predicted positive observations to all actual positives, indicating the model's ability to capture all relevant instances."},
+  {"instruction": "What is an F1-score?", "response": "The F1-score is the harmonic mean of precision and recall, providing a single metric that balances both for classification evaluation."},
+  {"instruction": "Define AUC-ROC.", "response": "AUC-ROC (Area Under the Receiver Operating Characteristic Curve) measures the ability of a model to distinguish between classes across various threshold settings."},
+  {"instruction": "What is Mean Squared Error (MSE)?", "response": "MSE is a common regression loss that calculates the average squared difference between predicted values and actual values."},
+  {"instruction": "What is BLEU score?", "response": "The BLEU (Bilingual Evaluation Understudy) score is a metric for evaluating the quality of text generated by machine translation models by comparing it to reference human translations."},
+  {"instruction": "What is ROUGE score?", "response": "ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics used primarily for evaluating automatic text summarization."},
+  {"instruction": "What is perplexity in language modeling?", "response": "Perplexity is a measurement of how well a probability model predicts a sample; a lower score indicates higher confidence in predicting the next token."},
+  {"instruction": "What is cross-entropy loss?", "response": "Cross-entropy loss measures the difference between two probability distributions; in classification, it compares the predicted probabilities against the true labels."},
+  {"instruction": "What is the purpose of a confusion matrix?", "response": "A confusion matrix provides a comprehensive view of performance by detailing exactly which classes were misclassified and how."},
+  {"instruction": "What is Mean Absolute Error (MAE)?", "response": "MAE is the average of the absolute differences between predictions and actual values, providing a measure of error that is less sensitive to outliers than MSE."},
+  {"instruction": "What is a validation curve?", "response": "A validation curve plots model performance on both training and validation sets as a function of a hyperparameter to diagnose underfitting or overfitting."},
+  {"instruction": "What is accuracy, and when can it be misleading?", "response": "Accuracy is the ratio of correct predictions to total cases. It is misleading in imbalanced datasets where the majority class can drive high accuracy despite poor performance on the minority class."},
+  {"instruction": "What is the Matthew Correlation Coefficient (MCC)?", "response": "MCC is a correlation coefficient between observed and predicted binary classifications, often considered a balanced metric for imbalanced datasets."},
+  {"instruction": "What is a learning curve?", "response": "A learning curve plots model performance over time or dataset size, helping to understand how much additional data or training time might improve performance."},
+  {"instruction": "What is Mean Reciprocal Rank (MRR)?", "response": "MRR is a statistic for evaluating processes that produce a list of possible responses to a query, ordered by probability of correctness."},
+  {"instruction": "What is the difference between micro and macro averaging?", "response": "Micro-averaging aggregates globally across all classes, while macro-averaging calculates the metric independently for each class and then takes the unweighted mean."},
+  {"instruction": "What is the purpose of a calibration curve?", "response": "A calibration curve checks if the predicted probabilities of a model match the actual empirical frequencies of the outcomes."},
+  {"instruction": "What is log-loss?", "response": "Log-loss (or binary cross-entropy) penalizes incorrect classifications while taking into account the confidence of the prediction."},
+  {"instruction": "Why is testing on a separate dataset crucial?", "response": "Testing on a completely unseen dataset is the only way to gauge how well the model generalizes to new data in real-world scenarios."},
+
+  {
+    "instruction": "What is an LLM?",
+    "response": "An LLM (Large Language Model) is a deep learning model trained on vast amounts of text data to understand, summarize, generate, and predict human-like language."
+  },
+  {
+    "instruction": "What is the primary difference between a base model and an instruction-tuned model?",
+    "response": "A base model is trained to predict the next token on raw text, while an instruction-tuned model is further trained to follow specific user prompts and dialogue."
+  },
+  {
+    "instruction": "What is 'hallucination' in LLMs?",
+    "response": "Hallucination occurs when an LLM generates information that is factually incorrect, nonsensical, or unfaithful to the provided context, while presenting it confidently."
+  },
+  {
+    "instruction": "What is in-context learning?",
+    "response": "In-context learning is the ability of an LLM to adapt to a new task by simply providing a few examples within the prompt, without updating the model weights."
+  },
+  {
+    "instruction": "What is chain-of-thought (CoT) prompting?",
+    "response": "CoT prompting encourages the model to generate intermediate reasoning steps before arriving at a final answer, which improves performance on complex reasoning tasks."
+  },
+  {
+    "instruction": "Why do LLMs have a fixed context window?",
+    "response": "The context window is limited by the computational complexity of the attention mechanism, which scales quadratically with the sequence length."
+  },
+  {
+    "instruction": "What is autoregressive generation?",
+    "response": "Autoregressive generation is the process where the model predicts one token at a time, using the previously generated tokens as input for the next prediction."
+  },
+  {
+    "instruction": "What is Retrieval-Augmented Generation (RAG)?",
+    "response": "RAG is a framework that improves LLM accuracy by retrieving relevant documents from an external knowledge base and providing them as context for the model."
+  },
+  {
+    "instruction": "What is a temperature hyperparameter?",
+    "response": "Temperature controls the randomness of token selection; lower values make output more deterministic, while higher values increase creativity and diversity."
+  },
+  {
+    "instruction": "What is a system prompt?",
+    "response": "A system prompt is a high-level directive given to the model at the start of a conversation to define its persona, constraints, and behavior."
+  },
+  {
+    "instruction": "What is model quantization?",
+    "response": "Quantization reduces the precision of model weights (e.g., from 16-bit to 4-bit) to decrease memory footprint and accelerate inference speed."
+  },
+  {
+    "instruction": "How do LLMs handle multi-modality?",
+    "response": "Multi-modal LLMs use specialized encoders or projection layers to map non-text data (like images or audio) into the same vector space as text embeddings."
+  },
+  {
+    "instruction": "What is an embedding model?",
+    "response": "An embedding model converts text into dense numerical vectors that capture semantic meaning, facilitating similarity searches and downstream classification."
+  },
+  {
+    "instruction": "What is 'zero-shot' prompting?",
+    "response": "Zero-shot prompting asks the model to perform a task without providing any task-specific examples in the input prompt."
+  },
+  {
+    "instruction": "What is the benefit of using KV-caching during inference?",
+    "response": "KV-caching stores the computed Key and Value vectors for previous tokens, preventing redundant recomputations and significantly speeding up generation."
+  },
+  {
+    "instruction": "What is the core idea of LoRA?",
+    "response": "LoRA freezes the pre-trained weights and injects trainable low-rank decomposition matrices into the transformer layers, drastically reducing the number of parameters to train."
+  },
+  {
+    "instruction": "What is the rank (r) in LoRA?",
+    "response": "The rank (r) is a hyperparameter that determines the dimension of the low-rank matrices; a lower rank results in fewer trainable parameters."
+  },
+  {
+    "instruction": "How does QLoRA improve upon LoRA?",
+    "response": "QLoRA reduces memory usage by quantizing the base model to 4-bit using NF4 data type, allowing fine-tuning of massive models on single consumer GPUs."
+  },
+  {
+    "instruction": "What is the purpose of the 'adapter' in LoRA?",
+    "response": "The adapter is the set of small, trainable matrices that learn the specific task's knowledge, which can be swapped out depending on the application."
+  },
+  {
+    "instruction": "Can LoRA weights be merged with the base model?",
+    "response": "Yes, once training is complete, the low-rank updates can be mathematically merged into the original weights, resulting in no additional inference latency."
+  },
+  {
+    "instruction": "What is Paged Optimizers in QLoRA?",
+    "response": "Paged optimizers manage memory spikes during gradient updates by offloading optimizer states to CPU memory, preventing OOM (Out-of-Memory) errors."
+  },
+  {
+    "instruction": "Why does LoRA avoid catastrophic forgetting?",
+    "response": "Because the original pre-trained weights remain frozen, the model retains its core general knowledge while the low-rank adapters capture new task-specific patterns."
+  },
+  {
+    "instruction": "What is the difference between full fine-tuning and parameter-efficient fine-tuning (PEFT)?",
+    "response": "Full fine-tuning updates all model parameters, whereas PEFT updates only a small subset or introduces new parameters, significantly reducing computational overhead."
+  },
+  {
+    "instruction": "What is the 'alpha' parameter in LoRA?",
+    "response": "Alpha is a scaling factor for the LoRA weights; it determines the influence of the adapter outputs relative to the pre-trained model outputs."
+  },
+  {
+    "instruction": "When should you use a higher rank in LoRA?",
+    "response": "A higher rank should be used for complex tasks or domains that differ significantly from the model's pre-training data, requiring more capacity to learn new mappings."
+  },
+  {
+    "instruction": "Is it possible to combine multiple LoRA adapters?",
+    "response": "Yes, techniques like LoRA-Hub or mixture-of-adapters allow combining multiple specialized adapters to perform complex, multi-faceted tasks."
+  },
+  {
+    "instruction": "Why is QLoRA considered 'memory-efficient'?",
+    "response": "It allows loading massive models in 4-bit precision, leaving more GPU VRAM available for activations and gradients during training."
+  },
+  {
+    "instruction": "What is the role of the projection matrix in LoRA?",
+    "response": "LoRA typically targets the query, key, value, and output projection matrices within the attention mechanism to adapt the model's internal representations."
+  },
+  {
+    "instruction": "Does LoRA require more data than full fine-tuning?",
+    "response": "Generally, no; LoRA can often achieve comparable results to full fine-tuning with similar or even less data due to the reduction in parameter search space."
+  },
+  {
+    "instruction": "What is the 'PEFT' library?",
+    "response": "PEFT is a Hugging Face library that provides standardized implementations of LoRA, Prefix Tuning, and other efficient fine-tuning techniques."
+  },
+  {
+    "instruction": "What is a 'persona' in prompt engineering?",
+    "response": "A persona is a technique where the user instructs the model to adopt a specific role, such as 'expert data scientist,' to influence the style and accuracy of the output."
+  },
+  {
+    "instruction": "What is the difference between few-shot and zero-shot prompting?",
+    "response": "Zero-shot relies on the model's pre-existing knowledge, while few-shot provides several input-output examples to guide the model's response format and logic."
+  },
+  {
+    "instruction": "What is a 'negative prompt'?",
+    "response": "A negative prompt specifies what the model should NOT include in its output, helping to constrain and focus the generated content."
+  },
+  {
+    "instruction": "What is prompt injection?",
+    "response": "Prompt injection is a security vulnerability where a user inputs malicious text designed to trick the model into ignoring its system instructions."
+  },
+  {
+    "instruction": "How do delimiters (e.g., '###') improve prompt performance?",
+    "response": "Delimiters help the model distinguish between instructions, input data, and examples, reducing ambiguity and preventing structure-related errors."
+  },
+  {
+    "instruction": "What is 'Self-Consistency' in prompting?",
+    "response": "Self-consistency involves generating multiple reasoning paths for the same prompt and selecting the most frequent answer, improving accuracy in logic problems."
+  },
+  {
+    "instruction": "Why is it important to define an output format in the prompt?",
+    "response": "Specifying formats (like JSON, CSV, or Markdown) ensures that the output is programmatically consumable and consistent across multiple calls."
+  },
+  {
+    "instruction": "What is the benefit of 'Iterative Prompting'?",
+    "response": "Iterative prompting involves refining the prompt based on model errors, allowing the user to incrementally improve quality and adherence to guidelines."
+  },
+  {
+    "instruction": "How does prompt length affect LLM performance?",
+    "response": "Excessively long prompts can lead to information dilution, where the model may lose focus on the primary task or ignore instructions buried in the middle."
+  },
+  {
+    "instruction": "What is 'Role Prompting'?",
+    "response": "Role prompting is assigning a specific expertise or background to the LLM to narrow down its scope and adjust its tone and vocabulary."
+  },
+  {
+    "instruction": "What is RLHF?",
+    "response": "Reinforcement Learning from Human Feedback (RLHF) uses human rankings of model responses to train a reward model, which then fine-tunes the LLM."
+  },
+  {
+    "instruction": "What is DPO (Direct Preference Optimization)?",
+    "response": "DPO is a simpler alternative to RLHF that aligns models by directly optimizing the probability of preferred versus rejected outputs without needing a separate reward model."
+  },
+  {
+    "instruction": "What are evaluation benchmarks like MMLU?",
+    "response": "MMLU (Massive Multitask Language Understanding) is a benchmark designed to test a model's world knowledge and problem-solving ability across various subjects."
+  },
+  {
+    "instruction": "Why is automated evaluation of generative models difficult?",
+    "response": "Standard metrics like BLEU or ROUGE focus on n-gram overlap and often fail to capture semantic meaning, coherence, or factuality."
+  },
+  {
+    "instruction": "What is 'LLM-as-a-judge'?",
+    "response": "LLM-as-a-judge uses a highly capable model (like GPT-4) to evaluate and score the responses of smaller, specialized models."
+  },
+  {
+    "instruction": "What is a reward model?",
+    "response": "A reward model is a secondary model trained to predict human preferences, providing a scalar score that the primary LLM tries to maximize."
+  },
+  {
+    "instruction": "What is the purpose of an alignment phase?",
+    "response": "Alignment ensures the model's behavior is helpful, honest, and harmless, preventing it from producing toxic or unsafe content."
+  },
+  {
+    "instruction": "What is 'Groundedness' in evaluation?",
+    "response": "Groundedness measures whether the model's generated response is strictly supported by the provided source documents or context."
+  },
+  {
+    "instruction": "What is a 'Side-by-Side' (SBS) evaluation?",
+    "response": "SBS evaluation involves human testers comparing two different model outputs and choosing which one is better, often used to build high-quality datasets."
+  },
+  {
+    "instruction": "Why is testing for safety/jailbreak vulnerability part of evaluation?",
+    "response": "It is critical to ensure that even under adversarial prompts, the model refuses to generate prohibited content, maintaining the integrity of the system."
+  },
+
+  {
+    "instruction": "Why does LoRA initialize matrix B to zero?",
+    "response": "Initializing B to zero ensures the LoRA update starts at zero, making the model initially identical to the pretrained model and preventing sudden behavioral changes."
+  },
+  {
+    "instruction": "Why is DPO more stable than RLHF?",
+    "response": "DPO directly optimizes preference pairs and avoids reward model training and PPO optimization, reducing complexity and instability."
+  },
+  {
+    "instruction": "Why are transformers better than RNNs for long contexts?",
+    "response": "Transformers capture long-range dependencies through self-attention and process tokens in parallel, avoiding the sequential bottlenecks of RNNs."
+  },
+  {
+    "instruction": "Why does quantization often lead to a slight drop in model performance?",
+    "response": "Quantization reduces numerical precision, leading to information loss and rounding errors that can slightly degrade the model's internal representation quality."
+  },
+  {
+    "instruction": "Why is layer normalization used in transformers rather than batch normalization?",
+    "response": "Layer normalization computes statistics across features within a single sequence, making it independent of batch size and more effective for variable-length inputs."
+  },
+  {
+    "instruction": "Why does the attention mechanism have quadratic complexity relative to sequence length?",
+    "response": "In self-attention, every token compares itself with every other token in the sequence, creating an N x N matrix, leading to $O(n^2)$ compute and memory cost."
+  },
+  {
+    "instruction": "Why do we use learning rate warm-up in transformer training?",
+    "response": "Warm-up prevents large gradients at the start of training from destabilizing the model weights, allowing the optimizer to stabilize before taking larger steps."
+  },
+  {
+    "instruction": "Why is it beneficial to target only the Query and Value projections in LoRA?",
+    "response": "Targeting just Q and V captures most of the task-specific adaptation capacity while significantly reducing the number of trainable parameters compared to targeting all matrices."
+  },
+  {
+    "instruction": "Why does RAG help mitigate hallucinations compared to a standalone LLM?",
+    "response": "RAG provides a source of truth by fetching relevant documents as context, allowing the model to ground its response in retrieved evidence instead of relying solely on internal parameters."
+  },
+  {
+    "instruction": "Why can 'catastrophic forgetting' occur during full fine-tuning?",
+    "response": "Updating all weights shifts the model's internal representations drastically, overwriting the broad general knowledge learned during pre-training with new, task-specific features."
+  },
+  {
+    "instruction": "Why is weight decay commonly used in fine-tuning LLMs?",
+    "response": "Weight decay prevents overfitting by penalizing large weights, encouraging the model to learn simpler representations that generalize better to unseen data."
+  },
+  {
+    "instruction": "Why is the Softmax function used in the attention mechanism?",
+    "response": "Softmax converts raw attention scores into a probability distribution that sums to one, effectively weighting the importance of different tokens relative to each other."
+  },
+  {
+    "instruction": "Why might a model output repeated phrases during generation?",
+    "response": "Repetition often occurs when the model gets stuck in a high-probability local optimum or because the temperature is too low, making it too deterministic."
+  },
+  {
+    "instruction": "Why does QLoRA use 4-bit NormalFloat (NF4) instead of standard 4-bit integers?",
+    "response": "NF4 is an information-theoretically optimal data type for weights normally distributed around zero, which preserves more precision and improves performance compared to standard linear quantization."
+  },
+  {
+    "instruction": "Why is gradient clipping used when training transformers?",
+    "response": "It prevents the 'exploding gradient' problem by rescaling the gradient vector if its norm exceeds a defined threshold, ensuring stable weight updates."
+  },
+  {
+    "instruction": "Why does self-attention require positional encodings?",
+    "response": "Self-attention is permutation-invariant; without positional encoding, the model treats the input as a 'bag of words' and cannot distinguish the order of tokens."
+  },
+  {
+    "instruction": "Why is it often harder to fine-tune a model for code generation than for chat?",
+    "response": "Code requires strict syntactic precision and long-range dependencies; small errors lead to non-functional results, making the loss landscape steeper and harder to navigate."
+  },
+  {
+    "instruction": "Why does inference latency increase as the context window fills up?",
+    "response": "The model must process all tokens in the context window; even with KV-caching, the attention mechanism must still attend to previous tokens, increasing compute cost per generated token."
+  },
+  {
+    "instruction": "Why do we use the 'log-sum-exp' trick when calculating softmax?",
+    "response": "It prevents numerical overflow by subtracting the maximum logit value from all logits, maintaining numerical stability when values are very large."
+  },
+  {
+    "instruction": "Why is fine-tuning on a small dataset risky?",
+    "response": "Small datasets increase the likelihood of the model simply memorizing the training examples (overfitting) rather than learning generalizable patterns."
+  },
+  {
+    "instruction": "Why might a model fail to follow instructions despite successful training?",
+    "response": "This often points to a misalignment between the instruction-tuning data distribution and the user's prompt structure, or insufficient diversity in the fine-tuning dataset."
+  },
+  {
+    "instruction": "Why does high temperature lead to lower factual accuracy?",
+    "response": "Higher temperature increases the probability of selecting lower-ranked, less likely tokens, which often results in more creative but also more factually incorrect statements."
+  },
+  {
+    "instruction": "Why is multi-head attention more effective than single-head attention?",
+    "response": "It allows the model to simultaneously attend to different types of information—such as syntax, semantics, and coreference—across different subspaces."
+  },
+  {
+    "instruction": "Why is it important to use consistent formatting in prompts?",
+    "response": "Consistent formatting reduces cognitive load for the model, making it easier to map inputs to the desired output structure, which improves adherence."
+  },
+  {
+    "instruction": "Why does fine-tuning with LoRA often maintain better model performance than full fine-tuning on small data?",
+    "response": "By restricting updates to low-rank matrices, LoRA acts as an implicit regularizer, preventing the model from drastically diverging from the robust features learned during pre-training."
+  },
+  {
+    "instruction": "What is the 'Attention Sink' phenomenon in LLMs?",
+    "response": "Attention sinks refer to specific tokens (often the initial tokens in a sequence) that accumulate a disproportionate amount of attention weight, acting as a fallback for the model even if they are not semantically relevant to the current position."
+  },
+  {
+    "instruction": "Why does adding more layers increase the risk of vanishing gradients, even with skip connections?",
+    "response": "While residual connections provide a direct path, extremely deep networks can still experience gradient dilution if the skip connections are blocked or if the initial layers become saturated, necessitating careful normalization techniques."
+  },
+  {
+    "instruction": "How does 'Mixture of Experts' (MoE) differ from a dense model?",
+    "response": "In a dense model, every parameter is activated for every token. In MoE, only a subset of 'expert' layers is activated per token, significantly increasing model capacity while keeping the computational cost (FLOPs) low."
+  },
+  {
+    "instruction": "Explain the role of the 'Router' in an MoE model.",
+    "response": "The router is a learnable gating network that assigns each incoming token to the most appropriate 'experts' in the layer, balancing the load and ensuring specific experts specialize in different data patterns."
+  },
+  {
+    "instruction": "Why is 'FlashAttention' faster than standard attention?",
+    "response": "FlashAttention is an I/O-aware algorithm that reduces the number of memory accesses between GPU HBM (High Bandwidth Memory) and SRAM, computing attention in blocks rather than materializing the full N x N matrix."
+  },
+  {
+    "instruction": "What is 'Grouped Query Attention' (GQA) and why is it used?",
+    "response": "GQA groups query heads to share a single key-value head, which drastically reduces the memory footprint of the KV-cache, allowing for larger batch sizes and longer sequence lengths during inference."
+  },
+  {
+    "instruction": "Why is 'Weight Tying' used in some language models?",
+    "response": "Weight tying uses the same weights for the input embedding matrix and the output projection matrix, reducing the total parameter count and often acting as a regularizer, though it constrains the model's capacity."
+  },
+  {
+    "instruction": "Explain the difference between 'Data Parallelism' and 'Model Parallelism'.",
+    "response": "Data parallelism copies the full model across multiple GPUs and processes different batches; model parallelism splits the model layers or tensors across multiple GPUs because the model is too large to fit in one."
+  },
+  {
+    "instruction": "What is 'Gradient Checkpointing'?",
+    "response": "Gradient checkpointing is a technique to save memory by discarding intermediate activations during the forward pass and recomputing them on-the-fly during the backward pass, trading computation for memory."
+  },
+  {
+    "instruction": "Why is 'RMSNorm' often preferred over 'LayerNorm' in modern architectures like Llama?",
+    "response": "RMSNorm simplifies LayerNorm by removing the mean-centering operation, only scaling the inputs by the root mean square. This provides similar stability with faster computation."
+  },
+  {
+    "instruction": "What is 'Double Quantization' in QLoRA?",
+    "response": "Double quantization quantizes the quantization constants themselves, which further reduces the memory overhead and allows for fitting even larger models into the same memory constraints."
+  },
+  {
+    "instruction": "Explain why LLMs have trouble with arithmetic compared to retrieval.",
+    "response": "LLMs predict the next token based on statistical probability rather than executing a formal logic or arithmetic engine; they excel at pattern matching but often lack the explicit step-by-step state tracking required for perfect calculation."
+  },
+  {
+    "instruction": "What is 'Speculative Decoding'?",
+    "response": "Speculative decoding uses a smaller, faster draft model to propose a sequence of tokens, which a larger model then verifies in parallel. If correct, it speeds up generation significantly."
+  },
+  {
+    "instruction": "Why do some models use 'SwiGLU' activation instead of ReLU or GeLU?",
+    "response": "SwiGLU is a gated linear unit that allows the model to learn a more complex, non-linear mapping between features, consistently outperforming standard activations in large transformer models."
+  },
+  {
+    "instruction": "What is 'Instruction Hijacking'?",
+    "response": "Instruction hijacking happens when input data contains commands that override the developer-defined system prompt, forcing the model to switch its persona or disclose hidden instructions."
+  },
+  {
+    "instruction": "Why is the order of fine-tuning datasets important?",
+    "response": "Models are prone to 'Recency Bias'; if you fine-tune on a specific domain last, the model is more likely to exhibit the behavior or style associated with that dataset, potentially overriding previous learning."
+  },
+  {
+    "instruction": "How do you mitigate 'Reward Hacking' in RLHF?",
+    "response": "Reward hacking occurs when the model finds a loophole in the reward model's logic. Mitigation includes improving the quality of human preference data, using multiple reward models, and regularizing the policy to stay close to the base model (KL divergence penalty)."
+  },
+  {
+    "instruction": "What is the 'Simulated Annealing' approach in prompting?",
+    "response": "It is an iterative optimization technique where you mutate the prompt slightly each step, keeping the version that yields better outputs, effectively 'cooling' the prompt into an optimal state."
+  },
+  {
+    "instruction": "Why is 'Context Distillation' useful?",
+    "response": "Context distillation is the process of training a model to internalize the logic of a complex chain-of-thought prompt, allowing the model to perform the reasoning without needing the long prompt as input."
+  },
+  {
+    "instruction": "What is 'Stochastic Depth' in neural networks?",
+    "response": "Stochastic depth randomly drops entire layers during training, acting as a regularization technique and creating an ensemble of sub-networks, which speeds up convergence."
+  },
+
+  {
+    "instruction": "Why does using 'gradient_checkpointing' reduce memory usage at the cost of speed?",
+    "response": "It saves memory by discarding intermediate activations during the forward pass; these are then recomputed during the backward pass, saving VRAM at the expense of extra FLOPs."
+  },
+  {
+    "instruction": "What is the difference between 'Pre-LayerNorm' and 'Post-LayerNorm' in Transformers?",
+    "response": "Pre-LayerNorm applies normalization before attention/FFN blocks, making training more stable and requiring less aggressive learning rate warm-up compared to Post-LayerNorm."
+  },
+  {
+    "instruction": "Why is 'Continuous Batching' more efficient for LLM inference?",
+    "response": "Continuous batching inserts new requests into the batch as soon as others finish, eliminating the need to wait for the entire batch to complete before processing new tokens."
+  },
+  {
+    "instruction": "What causes the 'KV-Cache' to become the memory bottleneck in long-context inference?",
+    "response": "The KV-cache grows linearly with sequence length and batch size. As context windows expand, storing the keys and values for every token consumes massive amounts of VRAM."
+  },
+  {
+    "instruction": "Why do we use 'bitsandbytes' for QLoRA?",
+    "response": "bitsandbytes provides 4-bit optimizers and quantization functions that are optimized for CUDA, enabling efficient loading and fine-tuning of large models in low-memory environments."
+  },
+  {
+    "instruction": "How does 'Entropy Regularization' improve RLHF?",
+    "response": "It prevents the model from converging too quickly on a single deterministic path, encouraging exploration of different high-reward strategies and preventing premature mode collapse."
+  },
+  {
+    "instruction": "Why is 'Cosine Learning Rate Decay' preferred for Transformers?",
+    "response": "Cosine decay gradually lowers the learning rate, allowing the model to settle into the minima of the loss landscape more effectively than a step-based decay."
+  },
+  {
+    "instruction": "What is the role of 'Attention Masking' in training?",
+    "response": "Masking prevents the model from attending to padding tokens or future tokens in the sequence, ensuring that the model learns to generate tokens based only on previous context."
+  },
+  {
+    "instruction": "Why does 'FP16' mixed precision training sometimes lead to 'NaN' losses?",
+    "response": "FP16 has a limited dynamic range. Large gradients or activations can exceed this range, leading to overflow; 'Gradient Scaling' is used to shift the values to a representable range."
+  },
+  {
+    "instruction": "What is 'Model Sharding' (e.g., FSDP)?",
+    "response": "Fully Sharded Data Parallel (FSDP) distributes model parameters, gradients, and optimizer states across all GPUs, reducing memory footprint per GPU compared to standard DDP."
+  },
+  {
+    "instruction": "Why are 'Special Tokens' (e.g., <|endoftext|>) necessary?",
+    "response": "They explicitly signal to the model the start, end, or specific roles within a conversation or document, allowing the architecture to distinguish between distinct semantic blocks."
+  },
+  {
+    "instruction": "Explain the trade-off between 'Beam Search' and 'Greedy Decoding'.",
+    "response": "Greedy decoding is fast but potentially sub-optimal. Beam search explores multiple paths to find a higher-probability global sequence, but at a higher computational cost."
+  },
+  {
+    "instruction": "Why is 'Kernel Fusion' important for LLM performance?",
+    "response": "Kernel fusion combines multiple small operations (e.g., add, multiply, activation) into a single GPU kernel, reducing the overhead of reading and writing to GPU memory multiple times."
+  },
+  {
+    "instruction": "What is 'Active Learning' in the context of LLM fine-tuning?",
+    "response": "Active learning uses a model to identify which samples it finds most uncertain or difficult, which are then prioritized for human annotation to maximize training efficiency."
+  },
+  {
+    "instruction": "How does 'RoPE' handle relative distances better than absolute embeddings?",
+    "response": "RoPE applies a rotation to the query/key vectors based on their position, making the dot product between two tokens depend naturally on their relative distance rather than their fixed absolute indices."
+  },
+  {
+    "instruction": "Why is the 'Feed-Forward Network' (FFN) bottlenecking a concern?",
+    "response": "The FFN consumes a large portion of parameters and computation in a transformer. Expanding the intermediate dimension increases capacity but slows down throughput."
+  },
+  {
+    "instruction": "What is the benefit of 'Flash-Decoding'?",
+    "response": "Flash-Decoding extends FlashAttention to the generation phase by parallelizing the attention computation across the sequence length, dramatically speeding up the generation of long sequences."
+  },
+  {
+    "instruction": "Why does 'Model Merging' (e.g., SLERP) work?",
+    "response": "Merging models with the same architecture by interpolating their weights allows for combining the capabilities of two specialized fine-tuned models without additional training."
+  },
+  {
+    "instruction": "What is 'Self-Instruct' fine-tuning?",
+    "response": "Self-instruct is a method where a base model is used to generate its own instruction-response pairs, which are then filtered and used to fine-tune the model, creating a virtuous cycle of improvement."
+  },
+  {
+    "instruction": "Why is 'Weight Initialization' critical for deep Transformer models?",
+    "response": "Poor initialization can lead to signals being amplified or dampened exponentially across layers, resulting in failure to converge during early training steps."
+  },
+  {
+    "instruction": "What is 'Contrastive Search'?",
+    "response": "Contrastive search prevents the model from generating repetitive, generic text by penalizing tokens that are too similar to previous context, promoting more diverse and distinct outputs."
+  },
+  {
+    "instruction": "Why does the 'AdamW' optimizer perform better for transformers?",
+    "response": "AdamW decouples weight decay from the gradient update, providing more consistent regularization and better generalization on large-scale language tasks compared to standard Adam."
+  },
+  {
+    "instruction": "What is the 'Softmax Bottleneck'?",
+    "response": "It refers to the theoretical limitation that a standard Softmax layer at the output can only represent a limited variety of distributions, potentially limiting language model expressivity."
+  },
+  {
+    "instruction": "How does 'Mixture of Depths' (MoD) improve architecture?",
+    "response": "MoD dynamically decides which tokens should pass through FFN layers and which should just pass through via skip connections, optimizing compute allocation based on token difficulty."
+  },
+  {
+    "instruction": "Why do we use 'Padding' in batching?",
+    "response": "Since sequences have different lengths, padding ensures all tensors in a batch have the same shape, which is a requirement for tensor-based hardware acceleration."
+  },
+  {
+    "instruction": "What is 'Inference-Time Compute' scaling?",
+    "response": "It is the strategy of allowing the model to 'think' longer (e.g., via multi-turn reasoning or chain-of-thought) to achieve better results on complex problems."
+  },
+  {
+    "instruction": "How does 'Layer Dropping' work?",
+    "response": "It is a regularization technique where specific layers are randomly skipped during training, forcing the remaining layers to become more robust and independent."
+  },
+  {
+    "instruction": "Why is the choice of 'Tokenizer' so important?",
+    "response": "An inefficient tokenizer can lead to sequences that are unnecessarily long or that break words into meaningless chunks, increasing compute costs and hurting semantic understanding."
+  },
+  {
+    "instruction": "What is 'Cross-Entropy' loss physically representing?",
+    "response": "It measures the divergence between the model's output distribution and the true target distribution; minimizing it is equivalent to maximizing the likelihood of the training data."
+  },
+  {
+    "instruction": "Why does 'LoRA' work for non-attention layers?",
+    "response": "Low-rank updates can approximate the weight changes required for any matrix-based layer, allowing the model to learn domain-specific features across the entire transformer architecture."
+  },
+  {
+    "instruction": "What is 'Distributed Data Parallelism' (DDP)?",
+    "response": "DDP replicates the model on every GPU, processes unique subsets of data, and synchronizes gradients during the backward pass to ensure consistency."
+  },
+  {
+    "instruction": "Why are 'FlashAttention-2' kernels optimized for A100/H100 GPUs?",
+    "response": "They are designed to leverage the specific architecture of Tensor Cores and SRAM management on these cards, minimizing expensive HBM operations."
+  },
+  {
+    "instruction": "What is the 'Curse of Bottlenecks' in Autoencoders?",
+    "response": "If the latent dimension is too small, the model loses essential information; if too large, it may just memorize input data instead of learning compact representations."
+  },
+  {
+    "instruction": "Why is 'Precision' important in evaluation metrics?",
+    "response": "Precision is crucial when the cost of a false positive is high (e.g., identifying a critical safety violation in an LLM output)."
+  },
+  {
+    "instruction": "What is 'Logit Bias'?",
+    "response": "Logit bias allows users to manually influence the likelihood of specific tokens during generation, forcing the model to favor or avoid certain words."
+  },
+  {
+    "instruction": "Why does 'Teacher Forcing' work?",
+    "response": "During training, we provide the model with the ground-truth previous token instead of the model's own predicted token, which prevents error propagation and speeds up training."
+  },
+  {
+    "instruction": "What is 'Sparsity' in neural networks?",
+    "response": "Sparsity occurs when many weights are zero; sparse models are faster to compute and store, but require specific hardware or software support to realize these gains."
+  },
+  {
+    "instruction": "Why is 'Stochastic Weight Averaging' (SWA) useful?",
+    "response": "SWA averages the weights of the model across different points in training, leading to better generalization and a wider, flatter local minimum."
+  },
+  {
+    "instruction": "What is the difference between 'Data Augmentation' and 'Instruction Fine-Tuning'?",
+    "response": "Data augmentation creates new training samples to improve robustness, while instruction fine-tuning aligns the model's behavior to follow specific user intents."
+  },
+  {
+    "instruction": "Why is the 'Hugging Face Hub' considered the industry standard?",
+    "response": "It provides a unified version-controlled ecosystem for models, datasets, and spaces, simplifying the end-to-end ML lifecycle for researchers and developers."
+  },
+  {
+    "instruction": "What is 'Weight Pruning'?",
+    "response": "Pruning removes weights below a certain threshold; unstructured pruning leaves the model sparse, while structured pruning removes entire neurons or heads."
+  },
+  {
+    "instruction": "How do 'Context Windows' impact training efficiency?",
+    "response": "Training on very long sequences requires much more VRAM; developers must balance context length with batch size and hardware memory constraints."
+  },
+  {
+    "instruction": "What is 'Gradient Accumulation'?",
+    "response": "It allows simulating a large batch size by running multiple forward-backward passes and accumulating gradients before performing a single weight update."
+  },
+  {
+    "instruction": "Why are 'Gated Linear Units' (GLU) effective?",
+    "response": "GLUs allow the model to dynamically gate the information flow, providing a learnable non-linearity that is more expressive than fixed activations like ReLU."
+  },
+  {
+    "instruction": "What is 'Model Overfitting' to training tokens?",
+    "response": "It occurs when a model treats the training data as a lookup table rather than learning underlying concepts, losing the ability to handle variations."
+  },
+  {
+    "instruction": "Why is 'Evaluation' the hardest part of LLM development?",
+    "response": "Language is subjective and nuanced; benchmarks often capture only a small sliver of real-world capability, making qualitative human assessment essential."
+  },
+  {
+    "instruction": "What is 'Activation Quantization'?",
+    "response": "Quantizing the activations during inference can speed up processing and reduce memory pressure, similar to weight quantization but applied at runtime."
+  },
+  {
+    "instruction": "Why is 'Self-Attention' permutation-invariant?",
+    "response": "Without positional encodings, the attention mechanism calculates relationships based solely on values, which doesn't inherently account for the position in the sequence."
+  },
+  {
+    "instruction": "What is 'Parameter Sharing'?",
+    "response": "It involves reusing the same weights for different layers or tasks to reduce the parameter count while maintaining model capacity."
+  },
+  {
+    "instruction": "How does 'Weight Tying' affect training stability?",
+    "response": "Weight tying reduces the number of parameters to optimize, which can help in data-scarce environments but requires careful balance with the model's representation capacity."
+  },
+
+  {
+    "instruction": "What is the primary difference between SFT and GRPO (Group Relative Policy Optimization)?",
+    "response": "SFT trains a model to mimic fixed output patterns, whereas GRPO optimizes the policy by generating multiple outputs for a prompt, evaluating them, and increasing the probability of those that achieve a higher reward, enabling reasoning improvements."
+  },
+  {
+    "instruction": "Why does Liger Kernel reduce training VRAM usage significantly?",
+    "response": "Liger Kernel implements fused Triton-based kernels for operations like RMSNorm, RoPE, and Cross-Entropy, which avoids the memory-intensive storage of intermediate activations required by standard PyTorch implementations."
+  },
+  {
+    "instruction": "How does Mixture of Experts (MoE) scale model capacity without linearly scaling compute?",
+    "response": "MoE uses a sparse architecture where only a subset of 'expert' FFN layers are activated per token, keeping the FLOPs count low while increasing the total parameter count available for knowledge storage."
+  },
+  {
+    "instruction": "Why is it recommended to deduplicate training data?",
+    "response": "Deduplication prevents the model from overfitting to common text patterns or specific samples, which reduces memory waste during training and helps the model generalize better to unseen prompts."
+  },
+  {
+    "instruction": "What is the primary advantage of MLA (Multi-Head Latent Attention)?",
+    "response": "MLA compresses the Key and Value heads into a shared latent vector, which drastically reduces the KV-cache size during inference, enabling larger context windows and batch sizes."
+  },
+  {
+    "instruction": "Why is 'Sliding Window Attention' useful in long-context models?",
+    "response": "It restricts the attention mechanism to a fixed local context window for each token, achieving linear complexity $O(n)$ instead of quadratic $O(n^2)$, making extremely long sequences computationally feasible."
+  },
+  {
+    "instruction": "Why do some fine-tuning configurations include 5-20% of base model pre-training data?",
+    "response": "Including base data helps the model maintain its general language capabilities and avoids 'catastrophic forgetting,' where the model loses its ability to handle tasks outside the narrow fine-tuning domain."
+  },
+  {
+    "instruction": "What is 'Mode Collapse' in RLHF/DPO?",
+    "response": "Mode collapse occurs when the model learns to output only a very narrow set of 'safe' or high-reward responses, significantly reducing the diversity and utility of its generated content."
+  },
+  {
+    "instruction": "Why are relative positional methods like RoPE preferred over learned absolute embeddings?",
+    "response": "Relative methods capture token distances more effectively and allow for better generalization to sequence lengths longer than those seen during pre-training, whereas absolute embeddings are bound to fixed positions."
+  },
+  {
+    "instruction": "How do fused operations improve fine-tuning performance?",
+    "response": "Fused operations combine multiple CUDA kernel calls into a single operation, reducing memory read/write overhead and minimizing the bottleneck between GPU compute units and High Bandwidth Memory (HBM)."
+  },
+  {
+    "instruction": "Why is 'DPO' generally preferred over 'PPO' in 2026?",
+    "response": "DPO simplifies the alignment pipeline by directly optimizing the preference loss between pairs, eliminating the need for a separate reward model and the instability often associated with PPO."
+  },
+  {
+    "instruction": "What is the role of 'KL-Divergence' regularization in policy optimization?",
+    "response": "It acts as a constraint, penalizing the fine-tuned model from deviating too far from the original base model, ensuring it remains stable and doesn't lose fundamental language coherence."
+  },
+  {
+    "instruction": "How do 'Synthetic Datasets' improve reasoning models?",
+    "response": "Synthetic data, such as chains-of-thought generated by highly capable models, provide high-quality reasoning traces that teach smaller models how to decompose complex problems step-by-step."
+  },
+  {
+    "instruction": "Why does training for too many epochs harm LLM fine-tuning?",
+    "response": "Too many epochs lead to overfitting, where the model essentially memorizes the training data distribution, causing it to lose its creative capability and ability to handle novel prompt structures."
+  },
+  {
+    "instruction": "What is the purpose of 'Contamination Checks' in data preparation?",
+    "response": "Contamination checks ensure that the evaluation benchmarks (e.g., MMLU, GSM8K) are not present in the training data, preventing inflated performance metrics that don't reflect true generalization."
+  },
+  {
+    "instruction": "Why can 'DoRA' (Weight-Decomposed Low-Rank Adaptation) outperform LoRA?",
+    "response": "DoRA decomposes weight updates into magnitude and direction, which better mimics the learning dynamics of full fine-tuning while retaining the parameter efficiency of LoRA."
+  },
+  {
+    "instruction": "What is the 'Softmax Saturation' problem?",
+    "response": "It occurs when inputs to Softmax are too large, leading to one value approaching 1 and others 0; this creates vanishing gradients for the model's update process."
+  },
+  {
+    "instruction": "Why are decoder-only architectures the industry standard for modern LLMs?",
+    "response": "They are optimized for autoregressive generation, which is the core requirement for interactive chatbots, and their structure simplifies scaling and attention compute at massive sizes."
+  },
+  {
+    "instruction": "Why does 'GQA' (Grouped Query Attention) balance efficiency and accuracy?",
+    "response": "By sharing K and V heads across multiple query heads, it balances the representational power of multi-head attention with the memory efficiency of multi-query attention."
+  },
+  {
+    "instruction": "Why is 'Triton' becoming essential for fine-tuning?",
+    "response": "Triton allows developers to write highly efficient custom kernels that outperform stock PyTorch implementations without the extreme complexity of writing raw CUDA C++."
+  },
+  {
+    "instruction": "What is 'Continuous Batching' at the request level?",
+    "response": "It allows an inference engine to finish individual sequences at different times and immediately fill their slots with new requests, maximizing GPU utilization throughout the generation process."
+  },
+  {
+    "instruction": "Why is the choice of 'Learning Rate' so critical in PEFT?",
+    "response": "Because only a tiny fraction of parameters are being updated, the learning rate must be tuned differently than in full fine-tuning; if too small, the adapters won't learn, if too large, training will explode."
+  },
+  {
+    "instruction": "What is the role of 'Byte Pair Encoding' (BPE) in LLMs?",
+    "response": "BPE balances vocabulary size and sequence length by breaking words into meaningful subwords, allowing the model to handle rare words and morphologically complex language efficiently."
+  },
+  {
+    "instruction": "Why does 'KV-Cache' benefit from 'PagedAttention'?",
+    "response": "PagedAttention manages the KV-cache using a memory-paging mechanism similar to OS virtual memory, which eliminates memory fragmentation and allows for more efficient use of VRAM."
+  },
+  {
+    "instruction": "Why do some models use 'SwiGLU' instead of GELU?",
+    "response": "SwiGLU provides a more expressive gating mechanism, which consistently leads to better performance on complex benchmarks for modern Llama-class architectures."
+  },
+  {
+    "instruction": "How do 'Preference Pairs' (DPO) work to align a model?",
+    "response": "They explicitly tell the model 'this response is better than that response,' allowing the mathematical optimization to shift the probability mass toward the preferred style/truth."
+  },
+  {
+    "instruction": "Why is the 'KV-cache' size dependent on the number of layers?",
+    "response": "Each transformer layer must store its own key and value matrices for the entire sequence, meaning memory consumption grows linearly with the depth of the model."
+  },
+  {
+    "instruction": "What is 'Gradient Accumulation' when used with multi-GPU training?",
+    "response": "It simulates a larger effective batch size by accumulating gradients over several mini-batches across all GPUs before synchronizing and performing a single weight update."
+  },
+  {
+    "instruction": "Why is 'RoPE' rotation-based rather than additive?",
+    "response": "Additive positional encoding can disrupt the semantic information in embeddings; rotation preserves the magnitude and injects positional information via relative orientation."
+  },
+  {
+    "instruction": "What is 'Mixed Precision' training?",
+    "response": "It uses 16-bit floats for the bulk of calculations to save memory and increase throughput, while maintaining a 32-bit master copy of weights for stability during updates."
+  },
+  {
+    "instruction": "Why is 'Overfitting' more common in small models?",
+    "response": "Small models have less capacity to learn complex distributions, so they tend to 'memorize' the specific training examples if the dataset is small or the training period is too long."
+  },
+  {
+    "instruction": "What is 'Model Distillation'?",
+    "response": "Distillation uses the probability outputs of a 'teacher' model (e.g., GPT-4) as the training target for a 'student' model, which forces the student to learn the teacher's nuanced logic."
+  },
+  {
+    "instruction": "How do 'Attention Masks' handle varying sequence lengths in a single batch?",
+    "response": "The mask identifies padding tokens (which are typically 0) so the attention mechanism ignores them when computing scores, ensuring that padding doesn't skew the learned distributions."
+  },
+  {
+    "instruction": "Why is the 'Softmax' layer temperature-scaled?",
+    "response": "Scaling logits before Softmax (e.g., dividing by temperature) controls the 'peakiness' of the distribution, which is used to modulate the model's creativity or determinism during inference."
+  },
+  {
+    "instruction": "What is the function of the 'Residual Connection' inside a transformer block?",
+    "response": "It allows the input signal to flow through the model unchanged, which prevents the vanishing gradient problem and helps the model learn residuals (changes) rather than raw mappings."
+  },
+  {
+    "instruction": "Why are 'Special Tokens' added during tokenizer training?",
+    "response": "They provide a consistent way to format data for different tasks (e.g., [INST], [SYS]), allowing the model to distinguish between instructions and conversation history."
+  },
+  {
+    "instruction": "What is the benefit of 'LoRA-Hub'?",
+    "response": "LoRA-Hub enables the dynamic composition of multiple LoRA adapters, allowing a single base model to switch tasks on-the-fly without retraining or large storage requirements."
+  },
+  {
+    "instruction": "Why do we use 'Linear Warm-up' at the start of training?",
+    "response": "It allows the model parameters to settle from their initial random state into a more structured form, avoiding the large gradient spikes that could destabilize training."
+  },
+  {
+    "instruction": "What is 'Activation Sharding'?",
+    "response": "It is a technique for extremely large models where activations are distributed across multiple GPUs, which allows fitting layers that would otherwise exceed single-device memory limits."
+  },
+  {
+    "instruction": "Why is 'Weight Decay' essential for LLM fine-tuning?",
+    "response": "Without weight decay, the model weights may grow arbitrarily large, leading to overfitting and unstable loss during long fine-tuning sessions."
+  },
+  {
+    "instruction": "How do 'Context Windows' influence model training cost?",
+    "response": "Because attention scales quadratically with sequence length, doubling the context window increases compute cost by 4x, making efficient attention designs critical."
+  },
+  {
+    "instruction": "What is 'Inference Throughput'?",
+    "response": "It measures how many tokens per second the system can generate across all active user requests; maximizing it requires efficient batching and memory management."
+  },
+  {
+    "instruction": "Why does 'LayerNorm' work better than 'BatchNorm' in Transformers?",
+    "response": "LayerNorm normalizes features for each token independently, which is robust to the variable lengths and dynamic batch compositions common in text generation."
+  },
+  {
+    "instruction": "What is the 'KV-Cache' memory trade-off?",
+    "response": "The cache trades VRAM capacity for inference speed; by storing previous tokens, we save the massive recomputation cost of the full attention mechanism at every generation step."
+  },
+  {
+    "instruction": "Why do some models employ 'Weight Tying' between input and output layers?",
+    "response": "It reduces the total parameter count and forces the model to use the same representation space for embeddings and predictions, often leading to better consistency."
+  },
+  {
+    "instruction": "What is 'Active Learning' during the SFT phase?",
+    "response": "It involves selecting only the most informative or 'difficult' samples from a large pool for human annotation, which improves training efficiency and performance."
+  },
+  {
+    "instruction": "How do 'Expert Gates' work in MoE?",
+    "response": "They take the embedding of a token and output a probability distribution over the experts, selecting the 'top-k' experts whose knowledge best matches the token's features."
+  },
+  {
+    "instruction": "Why is 'Flash-Decoding' particularly effective for generation?",
+    "response": "It allows parallelizing the computation of the attention output over the sequence length, which solves the bottleneck where generation typically becomes compute-bound at long lengths."
+  },
+  {
+    "instruction": "What is the difference between 'Pre-training' and 'Alignment'?",
+    "response": "Pre-training learns the structure and content of language (world knowledge), while alignment (SFT/RLHF) shapes that knowledge into a helpful, interactive assistant persona."
+  },
+  {
+    "instruction": "Why does 'Layer Dropping' improve model robustness?",
+    "response": "By dropping layers during training, the network is forced to learn redundant pathways and representations, making the final model more resilient and less prone to overfitting."
+  },
+
+  {
+    "instruction": "Explain the LoRA weight update equation and why it is parameter-efficient.",
+    "response": "The update is defined as $W' = W + \\Delta W = W + BA$, where $W$ is the frozen pretrained weight matrix ($d \\times k$), and $B$ and $A$ are low-rank matrices of rank $r$. Since $r \\ll d, k$, the number of trainable parameters is $r(d+k)$ compared to $dk$ in full fine-tuning, drastically reducing memory requirements."
+  },
+  {
+    "instruction": "Why does QLoRA use 4-bit NormalFloat (NF4) for weights?",
+    "response": "Pretrained weights are typically normally distributed with zero mean. NF4 is an information-theoretically optimal quantization data type that maps these weights to 4-bit values based on their quantiles, ensuring minimal quantization error compared to standard 4-bit integers."
+  },
+  {
+    "instruction": "Define the DPO (Direct Preference Optimization) loss function and explain its stability.",
+    "response": "The loss is $\\mathcal{L}_{DPO} = -\\log \\sigma \\left( \\beta \\log \\frac{\\pi_{\\theta}(y_w|x)}{\\pi_{ref}(y_w|x)} - \\beta \\log \\frac{\\pi_{\\theta}(y_l|x)}{\\pi_{ref}(y_l|x)} \\right)$. It is stable because it implicitly optimizes a reward model while training the policy directly, bypassing the need for a separate Reward Model (RM) and the complex PPO objective."
+  },
+  {
+    "instruction": "How does PagedAttention solve KV-Cache memory fragmentation?",
+    "response": "PagedAttention treats the KV-cache as virtual memory in an OS. It divides the cache into non-contiguous blocks that can be mapped to different physical memory slots, preventing external fragmentation and allowing dynamic resizing of the cache during generation."
+  },
+  {
+    "instruction": "What is the purpose of the Reward Model in RLHF and its objective?",
+    "response": "The Reward Model (RM) learns to predict a scalar score $r(x, y)$ that reflects human preference. It is trained via a margin-based loss $\\mathcal{L}_{RM} = -E_{(x, y_w, y_l)} [\\log \\sigma (r(x, y_w) - r(x, y_l))]$, where $y_w$ is the preferred response and $y_l$ is the rejected one."
+  },
+  {
+    "instruction": "Explain the dual quantization process in QLoRA.",
+    "response": "To further save memory, QLoRA quantizes the quantization constants themselves. If the weights are quantized with a block size $c$, we store the weight quantiles in 4-bit and then quantize those block-wise constants into 8-bit, reducing the footprint of the metadata itself."
+  },
+  {
+    "instruction": "Why does RAG require vector similarity search?",
+    "response": "RAG maps chunks of text into a high-dimensional vector space using an embedding function $f(x)$. Retrieval is performed by calculating the cosine similarity $\\text{sim}(q, k) = \\frac{q \\cdot k}{\\|q\\| \\|k\\|}$ between the query vector $q$ and document keys $k$, ensuring the model grounds its output in relevant, retrieved facts."
+  },
+  {
+    "instruction": "Why is the scale factor $\\alpha/r$ used in LoRA?",
+    "response": "The update $\\Delta W = \\frac{\\alpha}{r} BA$ scales the low-rank adaptation. This ensures that the weight updates remain within a stable range, preventing the model from deviating too aggressively from the pretrained weights when the rank $r$ is modified."
+  },
+  {
+    "instruction": "Explain the KV-Cache memory requirement equation.",
+    "response": "The memory size $M$ for the KV-cache is $M = 2 \\times L \\times d_{model} \\times n_{layers} \\times n_{tokens} \\times \\text{precision}$. The factor of 2 accounts for both Keys and Values. This grows linearly with the number of generated tokens, which is why long contexts quickly exhaust GPU memory."
+  },
+  {
+    "instruction": "Why is PPO (Proximal Policy Optimization) used in RLHF?",
+    "response": "PPO uses a clipped surrogate objective $\\min(r_t(\\theta)\\hat{A}_t, \\text{clip}(r_t(\\theta), 1-\\epsilon, 1+\\epsilon)\\hat{A}_t)$ to ensure that the policy update doesn't move too far from the previous iteration, maintaining stability while maximizing the predicted reward."
+  },
+  {
+    "instruction": "How does RAG avoid the 'context window bottleneck'?",
+    "response": "Instead of passing an entire book to an LLM, RAG retrieves only the specific paragraphs $k$ that are most semantically relevant. This keeps the input size within the model's fixed context window while providing high-quality, targeted information."
+  },
+  {
+    "instruction": "What is the role of the 'Reference Model' in DPO?",
+    "response": "The reference model ($\\pi_{ref}$) is the static, non-trainable base model. It acts as a KL-divergence constraint, ensuring the policy $\\pi_{\\theta}$ doesn't diverge from the original language distribution, which prevents the model from generating gibberish just to satisfy the reward signal."
+  },
+  {
+    "instruction": "Why does QLoRA employ '4-bit NormalFloat' over '4-bit Integer' quantization?",
+    "response": "Weights are not uniformly distributed; they are concentrated around zero. NF4 uses a non-linear mapping based on the normal distribution's cumulative distribution function (CDF), providing higher resolution where weights are most dense, thus reducing bias."
+  },
+  {
+    "instruction": "Define the attention mechanism equation used in KV-Cache.",
+    "response": "$\\text{Attention}(Q, K, V) = \\text{softmax}(\\frac{QK^T}{\\sqrt{d_k}})V$. In inference, $K$ and $V$ for previous tokens are retrieved from the KV-Cache, allowing the model to compute attention for the new token $Q$ without recomputing the entire sequence."
+  },
+  {
+    "instruction": "Why does DPO optimize the 'log-ratio' of probabilities?",
+    "response": "The log-ratio $\\log(\\frac{\\pi_{\\theta}(y_w)}{\\pi_{\\theta}(y_l)})$ directly reflects the relative preference of one response over another. By maximizing this log-ratio relative to the reference model, we push the model toward higher-quality generation without ever explicitly calculating a reward."
+  },
+  {
+    "instruction": "Explain the mathematical benefit of 'rank' in LoRA.",
+    "response": "The rank $r$ acts as a bottleneck that forces the model to learn only the most impactful updates. Mathematically, it assumes the weight update matrix $\\Delta W$ has a low intrinsic dimension, allowing $B$ and $A$ to compress the adaptation signal."
+  },
+  {
+    "instruction": "Why is the KV-Cache essential for 'Auto-regressive' decoding?",
+    "response": "Since the model predicts one token at a time, calculating attention requires the history of all tokens. Without the cache, the complexity of generating $n$ tokens would be $O(n^2)$, whereas with the cache, the update step for the $n$-th token is $O(n)$, drastically improving throughput."
+  },
+  {
+    "instruction": "Why does RAG use embeddings?",
+    "response": "Embeddings convert text into a geometric space where semantic distance corresponds to Euclidean or cosine distance. This enables fast, large-scale search through millions of documents to find the few that answer the user's prompt."
+  },
+  {
+    "instruction": "What is the 'Preference Data' distribution in RLHF?",
+    "response": "It consists of tuples $(x, y_w, y_l)$. The goal of the reward model is to learn a mapping $r: (x, y) \\to \\mathbb{R}$ such that the probability of choosing $y_w$ over $y_l$ is high, often modeled as $p(y_w > y_l) = \\sigma(r(y_w) - r(y_l))$."
+  },
+  {
+    "instruction": "Why is QLoRA considered 'parameter-efficient'?",
+    "response": "It combines the memory savings of 4-bit quantization (base weights) with the training efficiency of LoRA (adapter weights), allowing for the fine-tuning of 70B+ models on limited GPU resources."
+  },
+  {
+    "instruction": "Explain the 'KL-Penalty' in DPO.",
+    "response": "In DPO, the penalty is implicit. The log-ratio objective includes a factor $\\beta$ that controls how much the policy can deviate from the reference model. High $\\beta$ forces strict adherence to the base model's logic."
+  },
+  {
+    "instruction": "How do 'Block-wise Quantization' constants work in QLoRA?",
+    "response": "Weights are divided into blocks (e.g., 64 weights). Each block has its own scaling factor $\\gamma$, such that $W_{quant} = \\text{round}(W_{orig} / \\gamma)$. This prevents global outliers from ruining the quantization quality for the rest of the block."
+  },
+  {
+    "instruction": "Why is the Softmax function used in the Reward Model?",
+    "response": "The Reward Model outputs a scalar. The Softmax function allows the model to produce a normalized probability distribution over possible completions, which is then used to rank the preferences based on human-provided labels."
+  },
+  {
+    "instruction": "Explain the benefit of 'Flash-Decoding' for KV-Cache.",
+    "response": "During generation, the attention computation is limited by the memory bandwidth of the KV-Cache. Flash-Decoding parallelizes the query's attention across the entire KV sequence, reducing the memory access bottleneck."
+  },
+  {
+    "instruction": "Why does RAG improve factual accuracy?",
+    "response": "By providing source documents in the prompt, the model's objective changes from 'predict based on probability' to 'answer based on evidence'. This minimizes hallucinations because the model is forced to be consistent with the retrieved context."
+  },
+  {
+    "instruction": "What is the role of 'SVD' in LoRA initialization?",
+    "response": "While LoRA often uses random initialization for A, one could theoretically use Singular Value Decomposition (SVD) on a full fine-tuning weight update to find the optimal low-rank starting point for A and B."
+  },
+  {
+    "instruction": "Why is the Reward Model usually trained separately?",
+    "response": "Training the RM requires human-labeled ranking data. Because this data is finite and expensive, the RM is trained once as a static 'judge' for the policy model during the RLHF process."
+  },
+  {
+    "instruction": "Why does NF4 provide 'information-theoretic' optimality?",
+    "response": "It uses the quantile information of the weight distribution to assign 4-bit bins, ensuring that the expected quantization error (MSE) is as low as possible for the given data type."
+  },
+  {
+    "instruction": "Define 'Context Injection' in RAG.",
+    "response": "Context injection is the practice of prepending retrieved documents to the user prompt: `[Instructions] + [Retrieved Context] + [User Query]`. This allows the LLM to use the context as a working memory."
+  },
+  {
+    "instruction": "Why does LoRA affect inference latency?",
+    "response": "If LoRA weights are merged ($W + BA$), there is **zero** added latency. If adapters are kept separate, they require an additional matrix multiply, which slightly increases latency but allows for multi-tenant serving of different adapters."
+  },
+  {
+    "instruction": "Explain the 'Policy Shift' problem in RLHF.",
+    "response": "As the policy model improves through RL training, the distribution of responses changes. This can make the Reward Model inaccurate because it was trained on the base model's responses, necessitating iterative retraining."
+  },
+  {
+    "instruction": "Why is the KV-Cache critical for long-range dependency?",
+    "response": "Self-attention requires the model to query every previous position. The cache stores the results of these keys and values so they are accessible in $O(1)$ time, making the generation of long, coherent documents efficient."
+  },
+  {
+    "instruction": "How does DPO handle 'out-of-distribution' prompts?",
+    "response": "DPO maintains a reference model constraint. For prompts not in the preference data, the model defaults to the behavior of the reference model, ensuring that the model doesn't act unpredictably on unseen data."
+  },
+  {
+    "instruction": "Why does block-wise quantization reduce outliers?",
+    "response": "Outliers (values very far from the mean) would skew the quantization scaling factor if the factor were global. Block-wise quantization restricts the impact of outliers to their local neighborhood."
+  },
+  {
+    "instruction": "What is the equation for the 'Score' in a Reward Model?",
+    "response": "The model outputs a value $r_{\\phi}(x, y)$. This scalar is a representation of how much a human would like the response $y$ given the query $x$. Higher is better."
+  },
+  {
+    "instruction": "Why is FlashAttention-2 effective for the KV-cache?",
+    "response": "It minimizes the interaction with the HBM, which is the main bottleneck for KV-cache operations. It ensures that the compute-heavy attention blocks stay within the fast SRAM."
+  },
+  {
+    "instruction": "Why does RAG use 'Top-K' retrieval?",
+    "response": "Top-K retrieval limits the context to only the $K$ most similar documents. This balances providing enough information to answer the question with avoiding context overflow."
+  },
+  {
+    "instruction": "How is LoRA initialization B = 0 beneficial?",
+    "response": "Setting $B=0$ forces the initial output of the adapter branch to be exactly zero. This means $\\Delta W = 0$, ensuring the model behaves identically to the pretrained model at the very start of training."
+  },
+  {
+    "instruction": "What is the 'Simulated Preference' in DPO?",
+    "response": "DPO assumes that the preference distribution is linked to the optimal reward function. By training directly on preference pairs, it skips the step of explicitly modeling the reward, saving significant compute."
+  },
+  {
+    "instruction": "Why does quantization reduce 'Precision'?",
+    "response": "Quantization maps a large set of values to a smaller set (e.g., 65536 values in 16-bit to 16 values in 4-bit). This introduces round-off errors, which reduce the model's accuracy, particularly for very sensitive weights."
+  },
+  {
+    "instruction": "Define the 'Generation Bottleneck' in inference.",
+    "response": "Inference is split between the 'Prefill' phase (processing prompt, $O(n^2)$) and the 'Decode' phase (token by token, $O(n)$). KV-cache optimization specifically targets the Decode phase."
+  },
+  {
+    "instruction": "Why is 'RLHF' a multi-stage process?",
+    "response": "It requires: 1. Pretraining, 2. Supervised Fine-Tuning (SFT), 3. Reward Model Training, and 4. Policy Optimization (PPO). Each stage requires distinct datasets and computational techniques."
+  },
+  {
+    "instruction": "Why does RAG perform semantic search?",
+    "response": "Standard keyword search (TF-IDF) misses synonyms and intent. Semantic search (embeddings) understands that 'dog' and 'canine' are related, leading to higher retrieval quality."
+  },
+  {
+    "instruction": "What is the advantage of using '4-bit' for QLoRA weights?",
+    "response": "It reduces the model weight storage by 4x (compared to 16-bit). This is the difference between needing 140GB VRAM for a 70B model versus ~35GB, allowing it to run on standard high-end GPUs."
+  },
+  {
+    "instruction": "How does DPO handle 'undesirable' responses?",
+    "response": "By lowering the probability of the rejected completion $y_l$ and increasing the probability of the preferred $y_w$, DPO shifts the policy model toward the desired human standard."
+  },
+  {
+    "instruction": "Why is the KV-Cache 'size' dynamic?",
+    "response": "Because different requests have different sequence lengths, the cache must be able to allocate and deallocate blocks on-the-fly as tokens are added and finished."
+  },
+  {
+    "instruction": "Why is the 'Reward Model' trained on preference pairs?",
+    "response": "Human-labeled rankings are more consistent than absolute scores. Comparing $y_w$ vs $y_l$ is a relative judgment that humans find easier to make reliably."
+  },
+  {
+    "instruction": "What is the relationship between 'Rank' (r) and model capacity in LoRA?",
+    "response": "A higher rank $r$ allows the model to capture more complex adaptations. However, increasing $r$ also increases the number of trainable parameters, eventually approaching full fine-tuning."
+  },
+  {
+    "instruction": "Why does RAG work better with 'In-Context' updates?",
+    "response": "Models are frozen once trained. RAG allows the 'knowledge' of the model to be updated simply by updating the document database, without needing to perform expensive fine-tuning."
+  },
+  {
+    "instruction": "Define the 'Reward Optimization' goal.",
+    "response": "The goal is to maximize $E_{y \\sim \\pi_{\\theta}}[r(x, y)]$. Since we cannot differentiate through human rankings, we use a learned reward model as a proxy objective."
+  }
+]

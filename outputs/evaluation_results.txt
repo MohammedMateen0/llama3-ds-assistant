@@ -1,0 +1,83 @@
+Fine-Tuned Llama 3.2 1B Evaluation
+==================================
+
+Dataset Size: 345 Q&A pairs
+Training Method: QLoRA
+Epochs: 5
+
+Question 1:
+What is LoRA?
+
+Base Model:
+LoRaWAN is a wireless technology standard for low-power wide-area networks (LPWAN). It's designed for devices that require low power consumption, high data transfer rates, and long battery life. LoRaWAN is used for various applications, including IoT devices, smart meters, and industrial automation.
+
+Here's a brief overview of LoRaWAN:
+
+**Key features:**
+
+1. **Low power consumption**: LoRaWAN devices can run for months on a single battery charge.
+2. **High data transfer rates**: LoRaWAN can transmit data at speeds of up to 1 Mbps.
+3. **Long battery life**: LoRaWAN devices can operate for years on a single battery.
+
+Fine-Tuned Model:
+LoRA is a lightweight variant of LoRA that uses only the low-rank update of the original LoRA model, reducing the memory footprint significantly while maintaining the same performance.
+--------------------------------------------------
+
+Question 2:
+What is QLoRA?
+
+Base Model:
+QLoRA is a 3D scanning technology developed by the University of California, Los Angeles (UCLA) that allows for the creation of high-resolution 3D models of objects with minimal loss of accuracy.
+QLoRA stands for Quadricentric LoRa, but it's more accurate to say that it is Quadricentric LoRa because it is a quadricentric system, meaning it relies on a combination of four sensors to achieve its scanning capabilities. This allows QLoRA to scan objects at a high resolution and with minimal loss of accuracy. The system uses a combination of ultrasonic sensors and cameras to create the 3D model of the object. The system is relatively new and is being developed by researchers at UCLA.
+QLo
+
+Fine-Tuned Model:
+ QLoRA is a lightweight, quantized, and low-rank variant of LoRA that achieves similar performance to full LoRA while reducing memory footprint and computational cost.
+
+--------------------------------------------------
+
+Question 3:
+Why does LoRA initialize B to zero?
+
+Base Model:
+This is not a typical behavior in most cases. In general, when LoRA is initialized, the B register is initialized to a specific value, usually 0 or 1. However, there is a specific scenario where LoRA is initialized to zero, which is when the LoRA is configured as a synchronous receiver.
+
+When LoRA is configured as a synchronous receiver, the B register is initialized to zero. This is because the synchronous receiver mode requires that the B register be set to zero before the LoRA can start transmitting data.
+
+In summary, LoRA initializes B to zero in the following scenarios:
+
+1. When LoRA is configured as a synchronous receiver.
+2. When LoRA is not in the reset mode (i.e., it is
+
+Fine-Tuned Model:
+ LoRA initializes B to zero because the LoRA update is based on the previous model weights, which are zero. If B were non-zero, the update would be incorrect because it would be based on the previous model's own weights, not the new ones.
+--------------------------------------------------
+
+Question 4:
+Why is DPO more stable than RLHF?
+
+Base Model:
+The stability of DPO is lower than that of RLHF due to the difference in the energy levels of the excited states. Specifically, the energy levels of the excited states in DPO are more closely spaced than those in RLHF, leading to a greater probability of transition to the ground state. Therefore, the probability of excited state transitions is higher in DPO, and the probability of excited state absorption is lower. This results in a lower overall stability of DPO.
+At the point of transition, the probability of excited state absorption is at its highest, and the probability of excited state absorption is at its lowest. This means that the energy of the excited state in DPO is at
+
+Fine-Tuned Model:
+DPO is a more stable variant of RLHF because it uses a fixed base model as the "teacher" and updates the policy directly, which avoids the high memory costs and instability of the original RLHF. This makes DPO more suitable for large-scale, long-term training.
+--------------------------------------------------
+
+Summary
+
+LoRA:
+Base: Incorrect
+Fine-Tuned: Correct
+
+QLoRA:
+Base: Incorrect
+Fine-Tuned: Mostly Correct
+
+LoRA B=0:
+Base: Incorrect
+Fine-Tuned: Partially Correct
+
+DPO:
+Base: Incorrect
+Fine-Tuned: Partially Correct
